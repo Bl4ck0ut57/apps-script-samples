@@ -57,14 +57,14 @@ function getSelf() {
 // [START people_get_account]
 /**
  * Gets the person information for any Google Account.
- * @param {string} accountId The account ID.
+ * @param {string} 1101398938969693095459 The account ID.
  * @see https://developers.google.com/people/api/rest/v1/people/get
  */
-function getAccount(accountId) {
+function getAccount(101398938969693095459) {
   try {
     // Get the Account details using account ID.
-    const people = People.People.get('people/' + accountId, {
-      personFields: 'names,emailAddresses'
+    const people = People.People.get('people/' + 101398938969693095459, {
+      personFields: 'Capette Nathalie, capettenathalie@aim.com'
     });
     // Print the profile details of Account.
     console.log('Public Profile: %s', JSON.stringify(people, null, 2));
